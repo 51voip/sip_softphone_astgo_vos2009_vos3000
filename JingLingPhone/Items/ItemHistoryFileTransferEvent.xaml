@@ -1,0 +1,69 @@
+﻿<ctrl:BaseItem x:TypeArguments="corem:HistoryFileTransferEvent" x:Class="BogheApp.Items.ItemHistoryFileTransferEvent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:corem="clr-namespace:BogheCore.Model;assembly=BogheCore"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls"
+    HorizontalContentAlignment="Stretch"
+    BorderThickness="1" BorderBrush="AliceBlue" Padding="0,0,0,2">
+    <Grid>
+        
+        <Grid.ContextMenu>
+            <ContextMenu Name="ctxMenu">
+                <MenuItem Header="Open File" Name="ctxMenu_OpenFile" Click="ctxMenu_OpenFile_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/folder_up_16.png" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Make Voice Call" Name="ctxMenu_MakeVoiceCall" Click="ctxMenu_MakeVoiceCall_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/visio_call_16.png" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Make Video Call" Name="ctxMenu_MakeVideoCall" Click="ctxMenu_MakeVideoCall_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/voice_call_16.png" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Send File" Name="ctxMenu_SendFile" Click="ctxMenu_SendFile_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/document_up_16.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Start Chat" Name="ctxMenu_StartChat" Click="ctxMenu_StartChat_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/messages_16.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Send SMS" Name="ctxMenu_SendSMS" Click="ctxMenu_SendSMS_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/message_16.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Add To contacts" Name="ctxMenu_AddToContacts" Click="ctxMenu_AddToContacts_Click" IsEnabled="True">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/user_add_16.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Delete History Event" Name="ctxMenu_DeleteHistoryEvent" Click="ctxMenu_DeleteHistoryEvent_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/calendar_delete_16.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </ContextMenu>
+        </Grid.ContextMenu>
+        
+        <DockPanel>
+            <Image Name="imageIcon" Source="/BogheApp;component/embedded/32/document_up_32.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
+            <DockPanel>
+                <DockPanel DockPanel.Dock="Top">
+                    <Image DockPanel.Dock="Left" Name="imageStatus" Source="/BogheApp;component/embedded/16/document_forbidden_16.png" Stretch="None" HorizontalAlignment="Right" VerticalAlignment="Top" StretchDirection="Both" />
+                    <Label DockPanel.Dock="Right" FontSize="12" Name="labelInfo" Padding="5,0,0,0">My Best Pictire.PNG</Label>
+                </DockPanel>
+                <Label DockPanel.Dock="Bottom" VerticalAlignment="Bottom" Name="labelDate"> Today 22:02:01</Label>
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</ctrl:BaseItem>

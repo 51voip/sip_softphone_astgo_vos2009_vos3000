@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AV_ButtonCall" xml:space="preserve">
+    <value>呼叫</value>
+  </data>
+  <data name="AV_ButtonEndCall" xml:space="preserve">
+    <value>挂机</value>
+  </data>
+  <data name="AV_ButtonSendText" xml:space="preserve">
+    <value>发送文本</value>
+  </data>
+  <data name="AV_MenuCall" xml:space="preserve">
+    <value>呼叫</value>
+  </data>
+  <data name="AV_MenuContentSharing" xml:space="preserve">
+    <value>内容共享</value>
+  </data>
+  <data name="AV_MenuHangUp" xml:space="preserve">
+    <value>挂机</value>
+  </data>
+  <data name="AV_MenuHoldCall" xml:space="preserve">
+    <value>保持通话</value>
+  </data>
+  <data name="AV_MenuMakeAudioCall" xml:space="preserve">
+    <value>语音电话</value>
+  </data>
+  <data name="AV_MenuMakeTransfer" xml:space="preserve">
+    <value>呼叫转移</value>
+  </data>
+  <data name="AV_MenuMakeVideoCall" xml:space="preserve">
+    <value>视频电话</value>
+  </data>
+  <data name="AV_MenuSendFile" xml:space="preserve">
+    <value>发送文件</value>
+  </data>
+  <data name="AV_MenuShareImage" xml:space="preserve">
+    <value>共享图片</value>
+  </data>
+  <data name="AV_MenuShareVideo" xml:space="preserve">
+    <value>共享视频</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Button_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Button_SignIn" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="ContactEdit_DisplayName" xml:space="preserve">
+    <value>名称*:</value>
+  </data>
+  <data name="ContactEdit_Group" xml:space="preserve">
+    <value>分组名称*:</value>
+  </data>
+  <data name="ContactEdit_URI" xml:space="preserve">
+    <value>电话号码*:</value>
+  </data>
+  <data name="GroupEdit_DisplayName" xml:space="preserve">
+    <value>名称*:</value>
+  </data>
+  <data name="IM_Abort" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="IM_Invite" xml:space="preserve">
+    <value>邀请</value>
+  </data>
+  <data name="IM_MakeAudioCall" xml:space="preserve">
+    <value>语音电话</value>
+  </data>
+  <data name="IM_MakeVideoCall" xml:space="preserve">
+    <value>视频电话</value>
+  </data>
+  <data name="IM_MenuOptions" xml:space="preserve">
+    <value>选项(...)</value>
+  </data>
+  <data name="IM_SendFile" xml:space="preserve">
+    <value>发送文件</value>
+  </data>
+  <data name="IM_Sending" xml:space="preserve">
+    <value>发送...</value>
+  </data>
+  <data name="IM_SendText" xml:space="preserve">
+    <value>发送消息</value>
+  </data>
+  <data name="IM_ShareImage" xml:space="preserve">
+    <value>共享图片</value>
+  </data>
+  <data name="IM_ShareVideo" xml:space="preserve">
+    <value>共享视频</value>
+  </data>
+  <data name="MainWindow_About" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="MainWindow_AddContact" xml:space="preserve">
+    <value>添加联系人</value>
+  </data>
+  <data name="MainWindow_AddGroup" xml:space="preserve">
+    <value>添加分组</value>
+  </data>
+  <data name="MainWindow_Authorizations" xml:space="preserve">
+    <value>授权(0)</value>
+  </data>
+  <data name="MainWindow_BogheWebsite" xml:space="preserve">
+    <value>Boghe's Website</value>
+  </data>
+  <data name="MainWindow_ButtonCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="MainWindow_CheckForUpdates" xml:space="preserve">
+    <value>检测更新</value>
+  </data>
+  <data name="MainWindow_DeleteAllEvents" xml:space="preserve">
+    <value>删除所有事件</value>
+  </data>
+  <data name="MainWindow_DeleteContact" xml:space="preserve">
+    <value>删除联系人</value>
+  </data>
+  <data name="MainWindow_DeleteGroup" xml:space="preserve">
+    <value>删除分组</value>
+  </data>
+  <data name="MainWindow_DoubangoWebsite" xml:space="preserve">
+    <value>Doubango's Website</value>
+  </data>
+  <data name="MainWindow_EditContact" xml:space="preserve">
+    <value>编辑联系人</value>
+  </data>
+  <data name="MainWindow_EditGroup" xml:space="preserve">
+    <value>编辑分组</value>
+  </data>
+  <data name="MainWindow_Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="MainWindow_GettingStarted" xml:space="preserve">
+    <value>Getting Started</value>
+  </data>
+  <data name="MainWindow_IssueTracker" xml:space="preserve">
+    <value>Issue Tracker</value>
+  </data>
+  <data name="MainWindow_MenuAddressBook" xml:space="preserve">
+    <value>地址薄</value>
+  </data>
+  <data name="MainWindow_MenuFile" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="MainWindow_MenuHistory" xml:space="preserve">
+    <value>历史记录</value>
+  </data>
+  <data name="MainWindow_MenuTools" xml:space="preserve">
+    <value>工具</value>
+  </data>
+  <data name="MainWindow_NoMessages" xml:space="preserve">
+    <value>你没有消息</value>
+  </data>
+  <data name="MainWindow_Options" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="MainWindow_Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="MainWindow_Registrations" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="MainWindow_RequestInfo" xml:space="preserve">
+    <value>请求信息</value>
+  </data>
+  <data name="MainWindow_Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="MainWindow_ShowCalls" xml:space="preserve">
+    <value>显示所有通话</value>
+  </data>
+  <data name="MainWindow_ShowFileTransfers" xml:space="preserve">
+    <value>显示文件传输记录</value>
+  </data>
+  <data name="MainWindow_ShowHistory" xml:space="preserve">
+    <value>显示历史通话</value>
+  </data>
+  <data name="MainWindow_ShowMessages" xml:space="preserve">
+    <value>显示及时消息记录</value>
+  </data>
+  <data name="MainWindow_SignIn" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="MainWindow_SignOut" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="MainWindow_Title" xml:space="preserve">
+    <value>小精灵网络电话</value>
+  </data>
+  <data name="TabCodecs" xml:space="preserve">
+    <value>编码方式</value>
+  </data>
+  <data name="TabContacts" xml:space="preserve">
+    <value>通讯录</value>
+  </data>
+  <data name="TabContacts_BaseURI" xml:space="preserve">
+    <value>网址*:</value>
+  </data>
+  <data name="TabContacts_Password" xml:space="preserve">
+    <value>密码:</value>
+  </data>
+  <data name="TabContacts_StorageLocal" xml:space="preserve">
+    <value>本地存储</value>
+  </data>
+  <data name="TabContacts_StorageRemote" xml:space="preserve">
+    <value>远程存储</value>
+  </data>
+  <data name="TabContacts_Timeout" xml:space="preserve">
+    <value>超时:</value>
+  </data>
+  <data name="TabContacts_ToolTipMakeVideoCall" xml:space="preserve">
+    <value>语音电话</value>
+  </data>
+  <data name="TabContacts_ToolTipMakeVoiceCall" xml:space="preserve">
+    <value>视频电话</value>
+  </data>
+  <data name="TabContacts_ToolTipSendFile" xml:space="preserve">
+    <value>发送文件</value>
+  </data>
+  <data name="TabContacts_ToolTipStartChat" xml:space="preserve">
+    <value>发送及时消息</value>
+  </data>
+  <data name="TabContacts_Username" xml:space="preserve">
+    <value>用户名*:</value>
+  </data>
+  <data name="TabContacts_XCAPPrefs" xml:space="preserve">
+    <value>XCAP Preferences</value>
+  </data>
+  <data name="TabGeneral" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="TabGeneral_Enum" xml:space="preserve">
+    <value>ENUM (E.164) domain</value>
+  </data>
+  <data name="TabGeneral_LaunchWhenStart" xml:space="preserve">
+    <value>Launch when system starts</value>
+  </data>
+  <data name="TabHistory" xml:space="preserve">
+    <value>通话记录</value>
+  </data>
+  <data name="TabIdentity" xml:space="preserve">
+    <value>用户配置</value>
+  </data>
+  <data name="TabIdentity_AMF" xml:space="preserve">
+    <value>AMF*:</value>
+  </data>
+  <data name="TabIdentity_ConSettings" xml:space="preserve">
+    <value>连接字符串</value>
+  </data>
+  <data name="TabIdentity_DisplayName" xml:space="preserve">
+    <value>名称*:</value>
+  </data>
+  <data name="TabIdentity_EnableEarlyIMS" xml:space="preserve">
+    <value>使用早期 3GPP IMS 安全策略</value>
+  </data>
+  <data name="TabIdentity_OpId" xml:space="preserve">
+    <value>用户ID*:</value>
+  </data>
+  <data name="TabIdentity_Password" xml:space="preserve">
+    <value>密码*:</value>
+  </data>
+  <data name="TabIdentity_Privacy" xml:space="preserve">
+    <value>私有的:</value>
+  </data>
+  <data name="TabIdentity_PrivateId" xml:space="preserve">
+    <value>私有配置*:</value>
+  </data>
+  <data name="TabIdentity_PublicId" xml:space="preserve">
+    <value>公共配置*:</value>
+  </data>
+  <data name="TabIdentity_Realm" xml:space="preserve">
+    <value>范围*:</value>
+  </data>
+  <data name="TabIdentity_Security" xml:space="preserve">
+    <value>安全级别</value>
+  </data>
+  <data name="TabMessaging" xml:space="preserve">
+    <value>消息</value>
+  </data>
+  <data name="TabMessaging_Binary" xml:space="preserve">
+    <value>Binary Encoding (3GPP SMSIP)</value>
+  </data>
+  <data name="TabMessaging_Chat" xml:space="preserve">
+    <value>聊天</value>
+  </data>
+  <data name="TabMessaging_EnableIMDN" xml:space="preserve">
+    <value>Enable Instant Message Disposition Notification (IMDN)</value>
+  </data>
+  <data name="TabMessaging_EnableIsComposing" xml:space="preserve">
+    <value>Enable Indication of Message Composition for Instant Messaging</value>
+  </data>
+  <data name="TabMessaging_EnableMSRPFailureReports" xml:space="preserve">
+    <value>Enable MSRP Failure Reports</value>
+  </data>
+  <data name="TabMessaging_EnableMSRPSuccessReports" xml:space="preserve">
+    <value>Enable MSRP Success Reports</value>
+  </data>
+  <data name="TabMessaging_EnableOMAFinalDeliveryReports" xml:space="preserve">
+    <value>Enable OMA Final Delivery Reports</value>
+  </data>
+  <data name="TabMessaging_PlainText" xml:space="preserve">
+    <value>Plain Text Encoding</value>
+  </data>
+  <data name="TabMessaging_SMS" xml:space="preserve">
+    <value>短信息</value>
+  </data>
+  <data name="TabMessaging_SMSC" xml:space="preserve">
+    <value>短信息中心</value>
+  </data>
+  <data name="TabNATT" xml:space="preserve">
+    <value>NATT</value>
+  </data>
+  <data name="TabNATT_Discover_STUNSrv" xml:space="preserve">
+    <value>Discover STUN/TURN server</value>
+  </data>
+  <data name="TabNATT_EnableSTUN" xml:space="preserve">
+    <value>Enable STUN or TURN</value>
+  </data>
+  <data name="TabNATT_Port" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="TabNATT_Server" xml:space="preserve">
+    <value>Server:</value>
+  </data>
+  <data name="TabNATT_STUNTURN" xml:space="preserve">
+    <value>STUN / TURN</value>
+  </data>
+  <data name="TabNATT_Title" xml:space="preserve">
+    <value>NAT Traversal</value>
+  </data>
+  <data name="TabNATT_UseSTUNSrv" xml:space="preserve">
+    <value>Use this STUN/TURN server</value>
+  </data>
+  <data name="TabNetwork" xml:space="preserve">
+    <value>Network</value>
+  </data>
+  <data name="TabNetwork_AccessType" xml:space="preserve">
+    <value>Access Type</value>
+  </data>
+  <data name="TabNetwork_DiscoDHCP" xml:space="preserve">
+    <value>Proxy-CSCF discovery using DHCP</value>
+  </data>
+  <data name="TabNetwork_DiscoDNS" xml:space="preserve">
+    <value>Proxy-CSCF discovery using DNS NAPTR + SRV</value>
+  </data>
+  <data name="TabNetwork_EnableSigComp" xml:space="preserve">
+    <value>Enable Signaling Compression (SigComp)</value>
+  </data>
+  <data name="TabNetwork_Info" xml:space="preserve">
+    <value>Info:</value>
+  </data>
+  <data name="TabNetwork_IPVersion" xml:space="preserve">
+    <value>IP Version</value>
+  </data>
+  <data name="TabNetwork_Network" xml:space="preserve">
+    <value>Network</value>
+  </data>
+  <data name="TabNetwork_ProxyHost" xml:space="preserve">
+    <value>Proxy-CSCF Host*:</value>
+  </data>
+  <data name="TabNetwork_ProxyPort" xml:space="preserve">
+    <value>Proxy-CSCF port*:</value>
+  </data>
+  <data name="TabNetwork_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="TabNetwork_Title" xml:space="preserve">
+    <value>Networking</value>
+  </data>
+  <data name="TabNetwork_Transport" xml:space="preserve">
+    <value>Transport*:</value>
+  </data>
+  <data name="TabPresence" xml:space="preserve">
+    <value>Presence</value>
+  </data>
+  <data name="TabPresence_AvatarSize" xml:space="preserve">
+    <value>Avatar Size MUST be at least 80x60 or 60x80 and ratio must be 4/3</value>
+  </data>
+  <data name="TabPresence_EnablePublication" xml:space="preserve">
+    <value>Enable Publication</value>
+  </data>
+  <data name="TabPresence_EnableRLS" xml:space="preserve">
+    <value>Enable RLS when XCAP is enabled</value>
+  </data>
+  <data name="TabPresence_EnableSubscription" xml:space="preserve">
+    <value>Enable Subscription</value>
+  </data>
+  <data name="TabPresence_FreeText" xml:space="preserve">
+    <value>Free Text</value>
+  </data>
+  <data name="TabPresence_HomePage" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="TabPresence_HyperAvailTimeout" xml:space="preserve">
+    <value>Hyper-Availability Timeout</value>
+  </data>
+  <data name="TabPresence_Minutes" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="TabPresence_Publication" xml:space="preserve">
+    <value>Publication</value>
+  </data>
+  <data name="TabPresence_StatusIcon" xml:space="preserve">
+    <value>Status Icon (Click on the box to change)</value>
+  </data>
+  <data name="TabPresence_Subscription" xml:space="preserve">
+    <value>Subscription</value>
+  </data>
+  <data name="TabQoS" xml:space="preserve">
+    <value>QoS/QoE</value>
+  </data>
+  <data name="TabQoS_Bandwidth" xml:space="preserve">
+    <value>Bandwidth:</value>
+  </data>
+  <data name="TabQoS_EnableSessionTimers" xml:space="preserve">
+    <value>Enable Session Timers</value>
+  </data>
+  <data name="TabQoS_Preconditions" xml:space="preserve">
+    <value>Preconditions</value>
+  </data>
+  <data name="TabQoS_Refresher" xml:space="preserve">
+    <value>Refresher:</value>
+  </data>
+  <data name="TabQoS_SessionTimers" xml:space="preserve">
+    <value>Session Timers</value>
+  </data>
+  <data name="TabQoS_Strength" xml:space="preserve">
+    <value>Strength:</value>
+  </data>
+  <data name="TabQoS_Timeout" xml:space="preserve">
+    <value>Timeout:</value>
+  </data>
+  <data name="TabQoS_Title" xml:space="preserve">
+    <value>QoS/QoE</value>
+  </data>
+  <data name="TabQoS_Type" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="TabSecurity" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="TabSecurity_Algorithm" xml:space="preserve">
+    <value>Algorithm:</value>
+  </data>
+  <data name="TabSecurity_CertFile" xml:space="preserve">
+    <value>Certificate File:</value>
+  </data>
+  <data name="TabSecurity_EAlgorithm" xml:space="preserve">
+    <value>Encrypt Algorithm:</value>
+  </data>
+  <data name="TabSecurity_EnableIPSec" xml:space="preserve">
+    <value>Enable IPSec</value>
+  </data>
+  <data name="TabSecurity_IPSecParams" xml:space="preserve">
+    <value>IPSec Parameters</value>
+  </data>
+  <data name="TabSecurity_Mode" xml:space="preserve">
+    <value>Mode:</value>
+  </data>
+  <data name="TabSecurity_PrivateFile" xml:space="preserve">
+    <value>Private File:</value>
+  </data>
+  <data name="TabSecurity_Protocol" xml:space="preserve">
+    <value>Protocol:</value>
+  </data>
+  <data name="TabSecurity_PublicFile" xml:space="preserve">
+    <value>Public File</value>
+  </data>
+  <data name="TabSecurity_TLSParams" xml:space="preserve">
+    <value>TLS Parameters</value>
+  </data>
+  <data name="TabAbout" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="TabAuthentication" xml:space="preserve">
+    <value>身份验证</value>
+  </data>
+  <data name="TabPersonalCenter" xml:space="preserve">
+    <value>个人中心</value>
+  </data>
+  <data name="TabCall" xml:space="preserve">
+    <value>拨号</value>
+  </data>
+  <data name="Text_AddContact" xml:space="preserve">
+    <value>增加联系人</value>
+  </data>
+  <data name="Text_Answer" xml:space="preserve">
+    <value>应答</value>
+  </data>
+  <data name="Text_Call" xml:space="preserve">
+    <value>呼叫</value>
+  </data>
+  <data name="Text_CallInProgress" xml:space="preserve">
+    <value>正在处理呼叫</value>
+  </data>
+  <data name="Text_CallPlacedOnHold" xml:space="preserve">
+    <value>保持通话</value>
+  </data>
+  <data name="Text_CallTakenOffHold" xml:space="preserve">
+    <value>取消保持</value>
+  </data>
+  <data name="Text_CallTerminated" xml:space="preserve">
+    <value>呼叫结束</value>
+  </data>
+  <data name="Text_EarlyMediaStarted" xml:space="preserve">
+    <value>正在呼叫</value>
+  </data>
+  <data name="Text_EditContact" xml:space="preserve">
+    <value>编辑联系人</value>
+  </data>
+  <data name="Text_FailedToPlaceRemotePartyOnHold" xml:space="preserve">
+    <value>Failed to place remote party on hold</value>
+  </data>
+  <data name="Text_FailedToUnholdCall" xml:space="preserve">
+    <value>Failed to unhold call</value>
+  </data>
+  <data name="Text_HoldCall" xml:space="preserve">
+    <value>保持通话</value>
+  </data>
+  <data name="Text_InCall" xml:space="preserve">
+    <value>正在通话</value>
+  </data>
+  <data name="Text_IncomingCall" xml:space="preserve">
+    <value>主叫号码</value>
+  </data>
+  <data name="Text_PlacedOnHoldByRemoteParty" xml:space="preserve">
+    <value>Placed on hold by remote party</value>
+  </data>
+  <data name="Text_ResumeCall" xml:space="preserve">
+    <value>继续通话</value>
+  </data>
+  <data name="Text_Ringing" xml:space="preserve">
+    <value>对方正在振铃....</value>
+  </data>
+  <data name="Text_SendSMS" xml:space="preserve">
+    <value>发送短消息</value>
+  </data>
+  <data name="Text_SendText" xml:space="preserve">
+    <value>发送文本</value>
+  </data>
+  <data name="Text_TakenOffHoldByRemoteParty" xml:space="preserve">
+    <value>Taken off hold by remote party</value>
+  </data>
+  <data name="Text_TalkingWith" xml:space="preserve">
+    <value>正在呼叫</value>
+  </data>
+  <data name="Text_Accepted" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="Text_CallTransfer" xml:space="preserve">
+    <value>Call Transfer</value>
+  </data>
+  <data name="Text_Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="Text_Failed" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="Text_Initiated" xml:space="preserve">
+    <value>Initiated</value>
+  </data>
+  <data name="Text_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Text_Transfer" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="TabSecurity_SRTPParams" xml:space="preserve">
+    <value>SRTP Parameters</value>
+  </data>
+  <data name="AV_MenuAddVideo" xml:space="preserve">
+    <value>Add video</value>
+  </data>
+  <data name="AV_MenuRemoveVideo" xml:space="preserve">
+    <value>Remove video</value>
+  </data>
+  <data name="TabQoS_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="TabQoS_PrefVideoSize" xml:space="preserve">
+    <value>Preferred video Size:</value>
+  </data>
+  <data name="TabGeneral_Profile" xml:space="preserve">
+    <value>Media Profile</value>
+  </data>
+</root>

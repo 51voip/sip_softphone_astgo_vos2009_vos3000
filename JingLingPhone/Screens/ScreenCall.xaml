@@ -1,0 +1,198 @@
+﻿<ctrl:BaseScreen x:Class="BogheApp.Screens.ScreenCall"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    
+    >
+    <Grid >
+        <Grid.RowDefinitions >
+            <RowDefinition Height="138" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="270" />
+        </Grid.RowDefinitions>
+        <Grid Name="View1" Background="White" >
+            <Label Content="国内直拨资费0.1/分钟" Height="28" HorizontalAlignment="Left" Margin="10,4,0,0" Name="label1" VerticalAlignment="Top" Width="285" />
+            <Label Content="固定电话前请加拨区号去0，如 755 12345678" Height="28" HorizontalAlignment="Left" Margin="10,21,0,0" Name="label2" VerticalAlignment="Top" Width="285" />
+        </Grid>
+        <Grid Name="View2" Visibility="Hidden" Background="White">
+            
+            <StackPanel >
+            <TextBlock Name="H0" Foreground="#ff7eb239" FontSize="30" Text="13375795759" TextAlignment="Center" Margin="0,10,0,0" Height="40" ></TextBlock>
+            <TextBlock Name="H1" Foreground="#ff7eb239" FontSize="16" Text="浙江省金华市" TextAlignment="Center" Margin="0,10,0,0" Height="20" ></TextBlock>
+            <TextBlock Name="H2" Foreground="#ff7eb239" FontSize="15" Text="正在呼叫中..." TextAlignment="Center" Margin="0,10,0,0" Height="30" ></TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/BogheApp;component/Images/index_03.png"/>
+            </Grid.Background>
+            <TextBox HorizontalAlignment="Left"  Background="#f0f0f0" Name="textBoxTelNum" Width="175" FontSize="15"  BorderThickness="0" RenderTransformOrigin="0.662,0.933" Margin="25,0,0,11" Height="28" VerticalAlignment="Bottom" KeyDown="textBoxTelNum_KeyDown" KeyUp="textBoxTelNum_KeyUp"/>
+            <Grid Name="Tg" HorizontalAlignment="Left" Height="44" Margin="240,3,0,0" VerticalAlignment="Top" Width="54" MouseEnter="Tg_MouseEnter" MouseLeave="Tg_MouseLeave" MouseLeftButtonDown="Tg_MouseLeftButtonDown" Cursor="Hand"  >
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/huix.jpg"/>
+                </Grid.Background>
+            </Grid>
+        </Grid>
+        <Grid Name="Bhp" Grid.Row="2">
+            <Grid.RowDefinitions >
+                <RowDefinition Height="53" />
+                <RowDefinition Height="53" />
+                <RowDefinition Height="53" />
+                <RowDefinition Height="53" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="102" />
+                <ColumnDefinition Width="104" />
+                <ColumnDefinition Width="102" />
+            </Grid.ColumnDefinitions>
+            <Grid Name="N1" Grid.Row="0" Grid.Column="0" MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="1" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="1" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="1" />
+                    <TextBlock Text="" Margin="5,10,0,0" FontSize="15"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   />
+                </StackPanel>
+
+            </Grid>
+            <Grid Name="N2" Grid.Row="0" Grid.Column="1"  MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="2" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="2" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="2" />
+                    <TextBlock Text="ABC" Margin="5,10,0,0" FontSize="15"   Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"  Tag="2"  />
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Name="N3" Grid.Row="0" Grid.Column="2"  MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="3" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="3" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"  Tag="3"   />
+                    <TextBlock Text="DEF" Margin="5,10,0,0" FontSize="15"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"  Tag="3"  />
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Name="N4" Grid.Row="1" Grid.Column="0" MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="4" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="4" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"  Tag="4"  />
+                    <TextBlock Text="GHI" Margin="5,10,0,0" FontSize="15"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="4" />
+                </StackPanel>
+
+            </Grid>
+            <Grid Name="N5" Grid.Row="1" Grid.Column="1" MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="5" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="5" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="5" />
+                    <TextBlock Text="JKL" Margin="5,10,0,0" FontSize="15"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="5"  />
+                </StackPanel>
+
+            </Grid>
+            <Grid Name="N6" Grid.Row="1" Grid.Column="2" MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="6" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="6" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"  Tag="6"  />
+                    <TextBlock Text="MNO" Margin="5,10,0,0" FontSize="15"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"  Tag="6"   />
+                </StackPanel>
+
+            </Grid>
+
+
+            <Grid Name="N7" Grid.Row="2" Grid.Column="0" MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="7" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="7" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"  Tag="7"  />
+                    <TextBlock Text="PQRS" Margin="5,10,0,0" FontSize="15"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="7" />
+                </StackPanel>
+
+            </Grid>
+            <Grid Name="N8" Grid.Row="2" Grid.Column="1" MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="8" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="8" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"  Tag="8"  />
+                    <TextBlock Text="TUV" Margin="5,10,0,0" FontSize="15"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="8" />
+                </StackPanel>
+
+            </Grid>
+            <Grid Name="N9" Grid.Row="2" Grid.Column="2" MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="9" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="9" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="9" />
+                    <TextBlock Text="WXYZ" Margin="5,10,0,0" FontSize="15"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="9"  />
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Name="Nx" Grid.Row="3" Grid.Column="0" MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="000" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="*" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="000"  />
+
+                </StackPanel>
+
+            </Grid>
+            <Grid Name="N0" Grid.Row="3" Grid.Column="1" MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="0" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="0" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"   Tag="0"  />
+
+                </StackPanel>
+
+            </Grid>
+            <Grid Name="Nj" Grid.Row="3" Grid.Column="2" MouseEnter="N1_MouseEnter" MouseLeave="N1_MouseLeave" Tag="000" Cursor="Hand" MouseLeftButtonDown="Kiven">
+                <Grid.Background>
+                    <ImageBrush ImageSource="/BogheApp;component/Images/jianbian1.jpg"/>
+                </Grid.Background>
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock Text="#" Margin="30,0,0,0" FontSize="30"  Foreground="#FF0F0F0F" TextAlignment="Center" VerticalAlignment="Center"  Tag="000"  />
+
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Grid.Row="4" Grid.ColumnSpan="3"  >
+                <StackPanel Background="#FFEAEAEA" Orientation="Horizontal"  >
+                    <Image Margin="30,0,0,0" Source="/Images/index_07.png" Stretch="None" Width="54" Height="44" Tag="000" Cursor="Hand" MouseLeftButtonDown="Kiven" ></Image>
+                    <Image Name="Hj" Margin="50,0,0,0" Source="/Images/hujiao.jpg" Stretch="Fill"  MouseEnter="HJhov" MouseLeave="Image_MouseLeave" Width="173" Height="43" MouseLeftButtonDown="Image_MouseLeftButtonDown" Tag="0"  Cursor="Hand" />
+                    <Image Name="Gj" Margin="50,0,0,0" Source="/BogheApp;component/Images/guji.jpg" Stretch="Fill" Width="173" Height="43" MouseLeftButtonDown="Image_MouseLeftButtonDown_1" Tag="0" Cursor="Hand" />
+                </StackPanel>
+            </Grid>
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+
+
+
+
+    </Grid>
+</ctrl:BaseScreen>

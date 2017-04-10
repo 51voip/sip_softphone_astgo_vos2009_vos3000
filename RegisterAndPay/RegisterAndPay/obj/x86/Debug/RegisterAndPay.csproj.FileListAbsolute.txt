@@ -1,0 +1,11 @@
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\bin\Debug\RegisterAndPay.exe.config
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\bin\Debug\RegisterAndPay.exe
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\bin\Debug\RegisterAndPay.pdb
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\obj\x86\Debug\RegisterAndPay.csprojResolveAssemblyReference.cache
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\obj\x86\Debug\RegisterAndPay.FormModifyPassword.resources
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\obj\x86\Debug\RegisterAndPay.FormPay.resources
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\obj\x86\Debug\RegisterAndPay.FormRegister.resources
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\obj\x86\Debug\RegisterAndPay.Properties.Resources.resources
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\obj\x86\Debug\RegisterAndPay.csproj.GenerateResource.Cache
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\obj\x86\Debug\RegisterAndPay.exe
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\RegisterAndPay\RegisterAndPay\obj\x86\Debug\RegisterAndPay.pdb

@@ -1,0 +1,30 @@
+﻿<ctrl:BaseScreen x:Class="BogheApp.Screens.ScreenPersonalCenter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     
+    >
+    <Grid  Width="314" Height="457">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8" />
+            <RowDefinition Height="38" />
+            <RowDefinition Height="38" />
+            <RowDefinition Height="208" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="54" />
+            <RowDefinition Height="55" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/BogheApp;component/Images/UC.png"/>
+        </Grid.Background>
+
+        <TextBlock Height="51" Grid.Row="4" HorizontalAlignment="Left"  Name="textBlock1" Text="" VerticalAlignment="Top" Width="314" MouseLeftButtonDown="textBlock1_MouseLeftButtonDown" TextAlignment="Center" FontSize="32" FontFamily="Microsoft YaHei" Background="#00000000" Grid.RowSpan="2" Cursor="Hand" />
+        <TextBlock Height="51" Grid.Row="5"  HorizontalAlignment="Left"  Name="textBlock2" Text="" VerticalAlignment="Top" Width="314" MouseLeftButtonDown="textBlock2_MouseLeftButtonDown" FontSize="32" TextAlignment="Center"  Background="#00000000" Cursor="Hand" />
+
+
+        <TextBlock Height="51" Grid.Row="6"  HorizontalAlignment="Left"  Name="textBlock3" Text="" VerticalAlignment="Top" Width="314" MouseLeftButtonDown="textBlock3_MouseLeftButtonDown" FontSize="32" TextAlignment="Center"  Background="#00000000" Cursor="Hand" />
+        <TextBlock Text="" Grid.Row="2"  HorizontalAlignment="Left" Margin="60,8,5,10"  Name="label1" FontSize="18" VerticalAlignment="Top" Width="230" />
+        <TextBlock  Text="" Grid.Row="1" HorizontalAlignment="Left" Margin="60,8,5,10" FontSize="18"  Name="label2" VerticalAlignment="Top" Width="230" />
+    </Grid>
+</ctrl:BaseScreen>

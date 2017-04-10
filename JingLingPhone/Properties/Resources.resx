@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lock_warning_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\lock_warning_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_ball_glass_blue_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\bullet_ball_glass_blue_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="messages_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\messages_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="message_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\message_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sound_on_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\sound_on_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dtmf_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_7.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="messages_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\messages_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phone_pick_up_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\phone_pick_up_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_ball_glass_green_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\bullet_ball_glass_green_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="key_ok_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\key_ok_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Strings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\Strings.resx;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="call_incoming_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\45\call_incoming_45.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_ball_glass_yellow_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\bullet_ball_glass_yellow_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="signin_161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\signin_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dtmf_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_4.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Strings_fr_FR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\Strings.fr-FR.resx;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="sound_off_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\sound_off_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_back16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\user_back16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\user_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dtmf_star" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_star.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lock_warning_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\lock_warning_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dtmf_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_2.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bullet_ball_glass_yellow_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\bullet_ball_glass_yellow_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="call_resume_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\call_resume_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dtmf_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_3.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="icon_message_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\icon_message_16.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_forbidden_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\document_forbidden_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_ok_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\lock_ok_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_down_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\document_down_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_mobilephone_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\user_mobilephone_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keybroad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\keybroad.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="video_play_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\video_play_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_ball_glass_green_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\bullet_ball_glass_green_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_up_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\document_up_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_ball_glass_red_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\bullet_ball_glass_red_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_onthephone_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\user_onthephone_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\icon_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phone_hang_up_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\phone_hang_up_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_down_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\document_down_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connevent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\connevent.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound_off_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\sound_off_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_busy_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\user_busy_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_open_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\lock_open_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dtmf_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_0.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ringbacktone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\ringbacktone.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_pound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_pound.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_5.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="call_missed_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\45\call_missed_45.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="video_pause_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\video_pause_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_ok_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\lock_ok_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="messages_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\messages_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dtmf_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_8.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sound_on_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\sound_on_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_time_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\user_time_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_ball_glass_blue_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\bullet_ball_glass_blue_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ringtone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\ringtone.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bullet_ball_glass_grey_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\bullet_ball_glass_grey_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="signin_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\signin_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dtmf_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_9.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="secure_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\secure_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_hyper_avail_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\user_hyper_avail_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newsms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\newsms.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lock_warning_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\lock_warning_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="call_hold_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\call_hold_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_ball_glass_red_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\bullet_ball_glass_red_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dtmf_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_1.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lock_error_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\lock_error_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="call_outgoing_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\45\call_outgoing_45.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_messages_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\icon_messages_16.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hourglass_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\hourglass_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_error_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\lock_error_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="message_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\message_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_error_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\lock_error_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_ball_glass_grey_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\24\bullet_ball_glass_grey_24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="signout_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\signout_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_forbidden_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\document_forbidden_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_up_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\32\document_up_32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="log4net_xml" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\log4net.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="lock_ok_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\lock_ok_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_offline_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\16\user_offline_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avatar_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\48\avatar_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dtmf_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\embedded\sound\dtmf_6.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="键盘" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\键盘.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connevent1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\connevent.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_0.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_6.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_7.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_8.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_9.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_pound1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_pound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dtmf_star1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dtmf_star.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="newsms1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newsms.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ringbacktone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ringbacktone.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ringtone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ringtone.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

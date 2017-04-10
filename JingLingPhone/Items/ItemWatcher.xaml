@@ -1,0 +1,25 @@
+﻿<ctrl:BaseItem x:TypeArguments="corem:WatcherInfo" x:Class="BogheApp.Items.ItemWatcher"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:corem="clr-namespace:BogheCore.Model;assembly=BogheCore"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls"
+    Height="80" BorderThickness="1" BorderBrush="AliceBlue">
+    <Grid>
+        <Label Name="labelUriString" Height="28" VerticalAlignment="Top" Margin="0,0,26,0" FontWeight="Bold">test (sip:test@doubango.org;pres-list=rcs)</Label>
+        <Image HorizontalAlignment="Right" Margin="0,2,4,0" Name="imageStatus" Stretch="None" Width="16" Height="16" VerticalAlignment="Top" Source="/BogheApp;component/embedded/16/bullet_ball_glass_green_16.png" />
+        <Label Margin="0,25,4,0" Name="labelPackage" Height="28" VerticalAlignment="Top">Package (Presence)</Label>
+        <Label Margin="0,51,4,1" Name="labelStatus">Active (Approved)</Label>
+
+
+        <Grid.ContextMenu>
+            <ContextMenu Name="ctxMenu" Background="White" BorderBrush="SkyBlue">
+                <MenuItem Name="ctxMenu_Allow" Click="ctxMenu_Allow_Click" Header="Allow">
+                </MenuItem>
+                <MenuItem Name="ctxMenu_Block" Click="ctxMenu_Block_Click" Header="Block">
+                </MenuItem>
+                <MenuItem Name="ctxMenu_Revoke" Click="ctxMenu_Revoke_Click" Header="Revoke">
+                </MenuItem>
+            </ContextMenu>
+        </Grid.ContextMenu>
+    </Grid>
+</ctrl:BaseItem>

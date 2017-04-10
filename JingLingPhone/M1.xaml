@@ -1,0 +1,14 @@
+﻿<Window x:Class="BogheApp.M1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="M1" Height="183" Width="269"  AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen"  Topmost="True">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/M1.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="32" Margin="74,124,0,0" VerticalAlignment="Top" Width="120" Cursor="Hand" MouseLeftButtonDown="Grid_MouseLeftButtonDown" Background="#00000000"  />
+        <TextBlock Name="Mes" HorizontalAlignment="Left" Margin="41,53,0,0" TextWrapping="Wrap"  Text="" VerticalAlignment="Top" FontSize="14" Foreground="Gray" Width="200" Height="58"  />
+        <Grid HorizontalAlignment="Left" Height="35" Margin="-4,0,0,0" VerticalAlignment="Top" Width="273" MouseLeftButtonDown="Grid_MouseLeftButtonDown_1" Background="#00000000"/>
+
+    </Grid>
+</Window>

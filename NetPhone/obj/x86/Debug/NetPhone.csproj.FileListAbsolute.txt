@@ -1,0 +1,15 @@
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\bin\Debug\NetPhone.exe.config
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\bin\Debug\NetPhone.exe
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\bin\Debug\NetPhone.pdb
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\NetPhone.csprojResolveAssemblyReference.cache
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\MainWindow.baml
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\windows.baml
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\App.baml
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\MainWindow.g.cs
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\App.g.cs
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\NetPhone_MarkupCompile.cache
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\NetPhone.g.resources
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\NetPhone.Properties.Resources.resources
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\NetPhone.csproj.GenerateResource.Cache
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\NetPhone.exe
+M:\网盘资源区\51VOIP共享资源区\客户端源码\小精灵网络电话程序 最新版本代码\NetPhone\obj\x86\Debug\NetPhone.pdb

@@ -1,0 +1,27 @@
+﻿<custom:BaseScreen x:Class="BogheApp.Screens.ScreenAuthentication"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:res="clr-namespace:BogheApp.embedded"
+    xmlns:custom="clr-namespace:BogheControls;assembly=BogheControls" Height="446" Width="341">
+    <Grid>
+        
+        <TextBlock Height="28" Margin="12,137,0,0" Name="labelDisplayName" VerticalAlignment="Top" HorizontalAlignment="Left" Width="57" Text="用户名" Visibility="Hidden" />
+        <TextBox Height="23" Margin="68,137,36,0" Name="textBoxDisplayName" VerticalAlignment="Top" BorderBrush="SkyBlue" Visibility="Hidden" />
+        <TextBlock Text="{x:Static res:Strings.TabIdentity_PublicId}" Height="28" Margin="1,169,0,0" Name="labelPublicIdentity" VerticalAlignment="Top" HorizontalAlignment="Left" Width="101" Visibility="Hidden" />
+        <TextBox Height="23" Margin="118,171,12,0" Name="textBoxPublicIdentity" VerticalAlignment="Top" BorderBrush="SkyBlue" Visibility="Hidden" />
+        <TextBlock Text="{x:Static res:Strings.TabIdentity_PrivateId}" HorizontalAlignment="Left" Margin="1,200,0,0" Name="labelPrivateIdentity" Width="104" Height="28" VerticalAlignment="Top" Visibility="Hidden" />
+        <TextBox Margin="118,204,12,0" Name="textBoxPrivateIdentity" BorderBrush="SkyBlue" Height="23" VerticalAlignment="Top" Visibility="Hidden" />
+        <TextBlock HorizontalAlignment="Left" Margin="12,180,0,0" Name="labelPassword" Width="57" Height="26" VerticalAlignment="Top" Text="密码" Visibility="Hidden" />
+        <TextBlock Text="{x:Static res:Strings.TabIdentity_Realm}" HorizontalAlignment="Left" Margin="1,264,0,0" Name="labelRealm" Width="104" Height="28" VerticalAlignment="Top" Visibility="Hidden" />
+        <TextBox Margin="118,265,12,0" Name="textBoxRealm" BorderBrush="SkyBlue" Height="23" VerticalAlignment="Top" Visibility="Hidden" />
+        <CheckBox Content="{x:Static res:Strings.TabIdentity_EnableEarlyIMS}" Margin="12,307,12,0" Name="checkBoxEarlyIMS" Height="16" VerticalAlignment="Top" Visibility="Hidden" />
+        <Button Content="{x:Static res:Strings.Button_SignIn}" Margin="0,0,36,173" Name="buttonSignIn" Click="buttonSignIn_Click" Height="32" VerticalAlignment="Bottom" Background="Transparent" Padding="0" BorderBrush="SkyBlue" HorizontalAlignment="Right" Width="109" Visibility="Hidden" />
+        <Button Margin="0,0,48,154" Name="buttonCancel" HorizontalAlignment="Right" Width="90" Height="32" VerticalAlignment="Bottom" IsEnabled="False" Click="buttonCancel_Click" Background="Transparent" BorderBrush="SkyBlue" Content="取消登陆" Visibility="Hidden" />
+        <PasswordBox Margin="68,179,36,0" Name="passwordBox" BorderBrush="SkyBlue" Height="23" VerticalAlignment="Top" Visibility="Hidden" />
+        
+        <Image Margin="1,6,0,0" Name="imageGSMA" Stretch="None" VerticalAlignment="Top" Source="/BogheApp;component/embedded/gsma_rcs.png" HorizontalAlignment="Center" Visibility="Hidden" />
+        <ProgressBar Height="18" HorizontalAlignment="Left" Margin="10,113,0,0" Name="progressBar1" VerticalAlignment="Top" Width="217" />
+        <TextBlock Height="28" HorizontalAlignment="Left" Margin="9,94,0,0" Name="textBlock1" Text="可能需要几秒钟时间，请稍后..." VerticalAlignment="Top" Visibility="Visible" Width="291" />
+        <TextBlock Height="28" HorizontalAlignment="Left" Margin="10,77,0,0" Name="textBlock2" Text="正在验证用户身份," VerticalAlignment="Top" Visibility="Visible" Width="291" />
+    </Grid>
+</custom:BaseScreen>
