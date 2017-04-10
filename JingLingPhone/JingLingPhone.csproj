@@ -1,0 +1,1000 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA9DE4E7-5C53-4DDE-BD95-B478CE2E369E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BogheApp</RootNamespace>
+    <AssemblyName>BogheApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>BogheApp.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BogheControls, Version=2.0.127.797, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Release\fr-FR\new\BogheControls.dll</HintPath>
+    </Reference>
+    <Reference Include="BogheCore, Version=2.0.127.797, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Release\fr-FR\new\BogheCore.dll</HintPath>
+    </Reference>
+    <Reference Include="BogheXdm, Version=2.0.127.797, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Release\fr-FR\new\BogheXdm.dll</HintPath>
+    </Reference>
+    <Reference Include="doubango, Version=2.0.127.797, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Release\fr-FR\new\doubango.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=c198e78e289aebd0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="PresentationFramework.Classic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Release\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\HttpHelper.cs" />
+    <Compile Include="Common\KivenHttp.cs" />
+    <Compile Include="Common\MP3.cs" />
+    <Compile Include="Common\NotificationAreaIcon.cs" />
+    <Compile Include="EditPass.xaml.cs">
+      <DependentUpon>EditPass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="M1.xaml.cs">
+      <DependentUpon>M1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.Menu.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pay.xaml.cs">
+      <DependentUpon>Pay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CZ.xaml.cs">
+      <DependentUpon>CZ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reg.xaml.cs">
+      <DependentUpon>Reg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mess.xaml.cs">
+      <DependentUpon>Mess.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Screens\ScreenAbout.Screen.cs">
+      <DependentUpon>ScreenAbout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenAbout.xaml.cs">
+      <DependentUpon>ScreenAbout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenAuthentication.Screen.cs">
+      <DependentUpon>ScreenAuthentication.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenAuthentication.xaml.cs">
+      <DependentUpon>ScreenAuthentication.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenCall.Screen.cs" />
+    <Compile Include="Screens\ScreenCall.xaml.cs">
+      <DependentUpon>ScreenCall.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.xaml.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenPersonalCenter.Screen.cs" />
+    <Compile Include="Screens\ScreenPersonalCenter.xaml.cs">
+      <DependentUpon>ScreenPersonalCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenType.cs" />
+    <Compile Include="Services\ILogService.cs" />
+    <Compile Include="Services\Impl\LogService.cs" />
+    <Compile Include="Services\Impl\ScreenService.cs" />
+    <Compile Include="Services\Impl\Win32ServiceManager.cs" />
+    <Compile Include="Services\IScreenService.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="CallTransferWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EditPass.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Items\ItemContact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Items\ItemFileTransfer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Items\ItemGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Items\ItemHistoryAVCallEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Items\ItemHistoryChatEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Items\ItemHistoryFileTransferEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Items\ItemHistoryShortMessageEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Items\ItemRegistration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Items\ItemShortMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Items\ItemWatcher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="M1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CZ.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Reg.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Mess.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MessagingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ScreenAbout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ScreenAuthentication.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="CallTransferWindow.xaml.cs">
+      <DependentUpon>CallTransferWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="embedded\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="embedded\Strings.fr-FR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Items\DataTemplateSelectorContacts.cs" />
+    <Compile Include="Items\DataTemplateSelectorHistory.cs" />
+    <Compile Include="Items\DataTemplateSelectorMessaging.cs" />
+    <Compile Include="Items\ItemContact.xaml.cs">
+      <DependentUpon>ItemContact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ItemFileTransfer.xaml.cs">
+      <DependentUpon>ItemFileTransfer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ItemGroup.xaml.cs">
+      <DependentUpon>ItemGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ItemHistoryAVCallEvent.xaml.cs">
+      <DependentUpon>ItemHistoryAVCallEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ItemHistoryChatEvent.xaml.cs">
+      <DependentUpon>ItemHistoryChatEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ItemHistoryFileTransferEvent.xaml.cs">
+      <DependentUpon>ItemHistoryFileTransferEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ItemHistoryShortMessageEvent.xaml.cs">
+      <DependentUpon>ItemHistoryShortMessageEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ItemRegistration.xaml.cs">
+      <DependentUpon>ItemRegistration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ItemShortMessage.xaml.cs">
+      <DependentUpon>ItemShortMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ItemWatcher.xaml.cs">
+      <DependentUpon>ItemWatcher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.SipEvents.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.Status.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MediaActionHanler.cs" />
+    <Compile Include="MessagingWindow.Internals.cs">
+      <DependentUpon>MessagingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessagingWindow.MsrpEvent.cs">
+      <DependentUpon>MessagingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessagingWindow.Participants.cs">
+      <DependentUpon>MessagingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessagingWindow.SipEvent.cs">
+      <DependentUpon>MessagingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessagingWindow.xaml.cs">
+      <DependentUpon>MessagingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenContactEdit.Screen.cs">
+      <DependentUpon>ScreenContactEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenContactEdit.xaml.cs">
+      <DependentUpon>ScreenContactEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenContacts.Contacts.cs">
+      <DependentUpon>ScreenContacts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenContacts.Screen.cs">
+      <DependentUpon>ScreenContacts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenContacts.xaml.cs">
+      <DependentUpon>ScreenContacts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenGroupEdit.Screen.cs">
+      <DependentUpon>ScreenGroupEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenGroupEdit.xaml.cs">
+      <DependentUpon>ScreenGroupEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenHistory.Screen.cs">
+      <DependentUpon>ScreenHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenHistory.xaml.cs">
+      <DependentUpon>ScreenHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.Codecs.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.Contacts.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.General.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.Identity.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.Messaging.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.NATT.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.Network.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.Presence.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.QoSQoE.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.Screen.cs">
+      <SubType>
+      </SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenOptions.Security.cs">
+      <DependentUpon>ScreenOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenRegistrations.Screen.cs">
+      <DependentUpon>ScreenRegistrations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenRegistrations.xaml.cs">
+      <DependentUpon>ScreenRegistrations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenWatchers.Screen.cs">
+      <DependentUpon>ScreenWatchers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ScreenWatchers.xaml.cs">
+      <DependentUpon>ScreenWatchers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Impl\SoundService.cs" />
+    <Compile Include="SessionWindow.Internals.cs">
+      <DependentUpon>SessionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SessionWindow.Menu.cs">
+      <DependentUpon>SessionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SessionWindow.MsrpEvent.cs">
+      <DependentUpon>SessionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SessionWindow.SipEvent.cs">
+      <DependentUpon>SessionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SessionWindow.xaml.cs">
+      <DependentUpon>SessionWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Screens\ScreenCall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screens\ScreenContactEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ScreenContacts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ScreenGroupEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ScreenHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ScreenOptions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ScreenPersonalCenter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ScreenRegistrations.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screens\ScreenWatchers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SessionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\generic.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\icon_16.png" />
+    <Resource Include="Resources\键盘.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\signout_16.png" />
+    <Resource Include="embedded\16\signin_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\lock_error_32.png" />
+    <Resource Include="embedded\32\lock_ok_32.png" />
+    <Resource Include="embedded\32\lock_warning_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\lock_error_24.png" />
+    <Resource Include="embedded\24\lock_ok_24.png" />
+    <Resource Include="embedded\24\lock_warning_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\48\avatar_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\user_16.png" />
+    <Resource Include="embedded\16\user_back16.png" />
+    <Resource Include="embedded\16\user_busy_16.png" />
+    <Resource Include="embedded\16\user_hyper_avail_16.png" />
+    <Resource Include="embedded\16\user_offline_16.png" />
+    <Resource Include="embedded\16\user_onthephone_16.png" />
+    <Resource Include="embedded\16\user_time_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="embedded\log4net.xml" />
+    <EmbeddedResource Include="embedded\Strings.fr-FR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.fr-FR.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="embedded\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\lock_error_16.png" />
+    <Resource Include="embedded\16\lock_ok_16.png" />
+    <Resource Include="embedded\16\lock_warning_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\45\call_incoming_45.png" />
+    <Resource Include="embedded\45\call_missed_45.png" />
+    <Resource Include="embedded\45\call_outgoing_45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\sound\dtmf_pound.wav" />
+    <Resource Include="embedded\sound\ringtone.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\bullet_ball_glass_blue_24.png" />
+    <Resource Include="embedded\24\bullet_ball_glass_green_24.png" />
+    <Resource Include="embedded\24\bullet_ball_glass_grey_24.png" />
+    <Resource Include="embedded\24\bullet_ball_glass_red_24.png" />
+    <Resource Include="embedded\24\bullet_ball_glass_yellow_24.png" />
+    <Resource Include="embedded\24\hourglass_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\lock_open_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\phone_hang_up_32.png" />
+    <Resource Include="embedded\32\phone_pick_up_32.png" />
+    <Resource Include="embedded\32\user_mobilephone_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\document_down_32.png" />
+    <Resource Include="embedded\32\document_up_32.png" />
+    <Resource Include="embedded\32\messages_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\message_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\message_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\key_ok_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\key_warning_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\address_book_32.png" />
+    <Resource Include="embedded\32\application_edit_32.png" />
+    <Resource Include="embedded\32\coffee_beans_32.png" />
+    <Resource Include="embedded\32\firewall_information_32.png" />
+    <Resource Include="embedded\32\holmes_32.png" />
+    <Resource Include="embedded\32\lock_information_32.png" />
+    <Resource Include="embedded\32\message_information_32.png" />
+    <Resource Include="embedded\32\users4_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\call_incoming_16.png" />
+    <Resource Include="embedded\16\call_missed_16.png" />
+    <Resource Include="embedded\16\call_outgoing_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\call_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\date_time_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\12\search_clear_12.png" />
+    <Resource Include="embedded\12\search_info_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\bullet_ball_glass_blue_16.png" />
+    <Resource Include="embedded\16\bullet_ball_glass_green_16.png" />
+    <Resource Include="embedded\16\bullet_ball_glass_grey_16.png" />
+    <Resource Include="embedded\16\bullet_ball_glass_red_16.png" />
+    <Resource Include="embedded\16\bullet_ball_glass_yellow_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\messages_16.png" />
+    <Resource Include="embedded\16\message_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\icon_messages_16.ico" />
+    <Resource Include="embedded\16\icon_message_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\messages_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\avatar_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\mailbox_empty_24.png" />
+    <Resource Include="embedded\24\mailbox_full_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\magic_wand_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\magic_wand_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\user_delete_16.png" />
+    <Resource Include="embedded\16\user_edit_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\document_down_16.png" />
+    <Resource Include="embedded\16\document_up_16.png" />
+    <Resource Include="embedded\16\document_up_down_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\user_add_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\exit_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\about_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\user_refresh_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\users4_add_16.png" />
+    <Resource Include="embedded\16\users4_delete_16.png" />
+    <Resource Include="embedded\16\users4_edit_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\sound\newsms.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\sound\connevent.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\document_forbidden_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\document_forbidden_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\visio_call_32.png" />
+    <Resource Include="embedded\32\voice_call_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\visio_call_24.png" />
+    <Resource Include="embedded\24\voice_call_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\visio_call_16.png" />
+    <Resource Include="embedded\16\voice_call_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\call_hold_16.png" />
+    <Resource Include="embedded\16\call_resume_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\call_hold_32.png" />
+    <Resource Include="embedded\32\call_resume_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\phone_hang_up_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\call_transfer_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\call_transfer_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\calendar_delete_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\calendar_delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\folder_up_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\image_gallery_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\image_gallery_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\folder_view_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\user_preferences_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\user_information_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\dialog-accept_16.png" />
+    <Resource Include="embedded\16\dialog-block_16.png" />
+    <Resource Include="embedded\16\dialog-close-2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\family_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\dialog-question-2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\image_gallery_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\icon_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\48\icon_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\sound_off_32.png" />
+    <Resource Include="embedded\32\sound_on_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\sound_off_16.png" />
+    <Resource Include="embedded\16\sound_on_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\pen_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\secure_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\24\fullscreen_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\16\video_pause_16.png" />
+    <Resource Include="embedded\16\video_play_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\图标123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\32\keybroad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="embedded\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\通话记录.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close.png" />
+    <Resource Include="Images\closeMouseOver.png" />
+    <Resource Include="Images\Minimize.png" />
+    <Resource Include="Images\MinimizeMouseOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\K1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\c0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\index.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\index_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jianbian1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\baix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hujiao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\index_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HJ1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\M1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jianbian2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\guji.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\huix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="embedded\sound\dtmf_0.wav" />
+    <Content Include="embedded\sound\dtmf_1.wav" />
+    <Content Include="embedded\sound\dtmf_2.wav" />
+    <Content Include="embedded\sound\dtmf_3.wav" />
+    <Content Include="embedded\sound\dtmf_4.wav" />
+    <Content Include="embedded\sound\dtmf_5.wav" />
+    <Content Include="embedded\sound\dtmf_6.wav" />
+    <Content Include="embedded\sound\dtmf_7.wav" />
+    <Content Include="embedded\sound\dtmf_8.wav" />
+    <Content Include="embedded\sound\dtmf_9.wav" />
+    <Content Include="embedded\sound\dtmf_star.wav" />
+    <Content Include="embedded\sound\ringbacktone.wav" />
+    <Resource Include="Images\UC.png" />
+    <Resource Include="Images\loginout.jpg" />
+    <Resource Include="Images\0.jpg" />
+    <Resource Include="Images\1.jpg" />
+    <Resource Include="Images\2.jpg" />
+    <Resource Include="Images\index.png" />
+    <Resource Include="Images\个人中心.png" />
+    <Resource Include="Images\pay.jpg" />
+    <Resource Include="Images\T00.jpg" />
+    <Resource Include="Images\T01.jpg" />
+    <Resource Include="Images\T10.jpg" />
+    <Resource Include="Images\T11.jpg" />
+    <Resource Include="Images\T20.jpg" />
+    <Resource Include="Images\T21.jpg" />
+    <Resource Include="Images\111122.png" />
+    <None Include="Resources\dtmf_4.wav" />
+    <None Include="Resources\dtmf_3.wav" />
+    <None Include="Resources\dtmf_2.wav" />
+    <None Include="Resources\dtmf_1.wav" />
+    <None Include="Resources\dtmf_0.wav" />
+    <None Include="Resources\connevent.wav" />
+    <None Include="Resources\ringtone.wav" />
+    <None Include="Resources\ringbacktone.wav" />
+    <None Include="Resources\newsms.wav" />
+    <None Include="Resources\dtmf_star.wav" />
+    <None Include="Resources\dtmf_pound.wav" />
+    <None Include="Resources\dtmf_9.wav" />
+    <None Include="Resources\dtmf_8.wav" />
+    <None Include="Resources\dtmf_7.wav" />
+    <None Include="Resources\dtmf_6.wav" />
+    <None Include="Resources\dtmf_5.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy ..\Release\fr-FR\old\BogheControls.dll  ..\Release\
+copy ..\Release\fr-FR\old\BogheXdm.dll  ..\Release\
+copy ..\Release\fr-FR\old\BogheCore.dll  ..\Release\
+copy ..\Release\fr-FR\old\doubango.dll  ..\Release\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

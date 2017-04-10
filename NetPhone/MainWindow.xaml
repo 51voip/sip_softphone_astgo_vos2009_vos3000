@@ -1,0 +1,53 @@
+﻿<Window  x:Class="NetPhone.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        x:Name="window" mc:Ignorable="d"
+        Title="MainWindow" Height="690" Width="340" 
+        Style="{DynamicResource NoResize_window}" MouseLeftButtonDown="Window_MouseLeftButtonDown" Loaded="window_Loaded" Icon="/NetPhone;component/Images/111122.ico">
+    <Window.Background>
+        <ImageBrush ImageSource="/NetPhone;component/Images/件8.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
+    <Grid Width="340" Height="690">
+        <Button x:Name="Minimize" Click="___Click" Height="10" Margin="284,6,46,674">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="img" Source="/Images/Minimize.png" Width="10" Height="10"/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="img" Property="Source" Value="/Images/MinimizeMouseOver.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <Button.Background>
+                <ImageBrush />
+            </Button.Background>
+        </Button>
+        <Button x:Name="Exit" Click="x_Click"  Width="10" Height="10" Margin="0,5,28,675" HorizontalAlignment="Right">
+            <Button.Background>
+                <ImageBrush ImageSource="/NetPhone;component/Images/close.png" Stretch="Fill" TileMode="None" />
+            </Button.Background>
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="img" Source="/Images/close.png" Width="10" Height="10"/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="img" Property="Source" 
+                                                    Value="/Images/closeMouseOver.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBox Height="34.999" HorizontalAlignment="Left" Margin="75,279.55555,0,0" Name="textBoxDisplayName" VerticalAlignment="Top" Width="200" FontSize="18" />
+        <PasswordBox Height="34.999" HorizontalAlignment="Left" Margin="74,354.999,0,0" Name="passwordBox" VerticalAlignment="Top" Width="201" FontSize="18" />
+        <CheckBox Content="记住密码" Height="30" HorizontalAlignment="Left" Margin="40,432,0,0" Name="checkBoxPassword" VerticalAlignment="Top" FontSize="18" Foreground="#FFF5ECEC" Width="100" />
+        <CheckBox Content="自动登录" Height="30" HorizontalAlignment="Left" Margin="40,455,0,0" Name="checkBoxAutoRun" VerticalAlignment="Top" FontSize="18" Foreground="#FFF2EFEF" Width="100" />
+        <Label Height="30" HorizontalAlignment="Left" Margin="197,322,0,0" Name="labelReg" VerticalAlignment="Top" Width="100" Content="注册账号" FontSize="18" Foreground="#FFF5ECEC" SnapsToDevicePixels="False" FontStyle="Normal" FontWeight="Normal" FontStretch="Normal" MouseEnter="labelReg_MouseEnter" MouseLeave="labelReg_MouseLeave" MouseLeftButtonDown="labelReg_MouseLeftButtonDown" />
+        <Button Content="登录" Height="38" HorizontalAlignment="Left" Margin="99,528,0,0" Name="buttonLogIn" VerticalAlignment="Top" Width="124" Foreground="#FF0D0D0D" FontSize="15" Background="#FFFCFCFC" Click="buttonLogIn_Click" />
+        <Label Content="忘记密码" FontSize="18" FontStretch="Normal" FontStyle="Normal" FontWeight="Normal" Foreground="#FFF5ECEC" Height="30" HorizontalAlignment="Left" Margin="193,391,0,0" Name="label1" SnapsToDevicePixels="False" VerticalAlignment="Top" Width="100" MouseEnter="label1_MouseEnter" MouseLeave="label1_MouseLeave" MouseLeftButtonDown="label1_MouseLeftButtonDown" Visibility="Hidden" />
+        <Label Content="安装软交换、ASTGO、VOS等各种软交换、软交换安装包访问&#xD;&#xA;访问www.51voip.org" HorizontalAlignment="Left" Margin="0,595,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.262,-1.391" FontSize="14" Height="64" Width="312"/>
+    </Grid>
+</Window>

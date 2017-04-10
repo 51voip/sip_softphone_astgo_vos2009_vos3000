@@ -1,0 +1,61 @@
+﻿<Window x:Class="BogheApp.MainWindow"
+        xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:base="clr-namespace:BogheApp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        x:Name="window" mc:Ignorable="d"
+        Title="小精灵网络电话" Width="320" Height="620" WindowStyle="None" AllowsTransparency="True" 
+        MouseLeftButtonDown="Window_MouseLeftButtonDown" Loaded="Window_Loaded" StateChanged="window_StateChanged_1" Icon="images/icon.ico" >
+    <Window.Background>
+        <ImageBrush ImageSource="Images/index.png" Stretch="Uniform"/>
+    </Window.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="119" />
+            <RowDefinition Height="43" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+ 
+        <TabControl Name="Tab1" Grid.Row="2" Margin="4,-25,4,5" Background="Transparent" Height="478" Width="312" BorderThickness="0"  >
+
+
+        </TabControl>
+       
+        <TextBlock Name="Uname" FontSize="18" HorizontalAlignment="Left" Margin="70,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock Name="Ye" FontSize="18" HorizontalAlignment="Left" Margin="70,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="1.231,2.133"/>
+        <TextBlock Name="UserCz" FontSize="13" HorizontalAlignment="Left" Margin="164,92,0,0" TextWrapping="Wrap" Text="  " Cursor="Hand" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="1.231,2.133" MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Height="20" Width="51"/>
+        <Grid HorizontalAlignment="Left" Height="18" Margin="261,0,0,95" VerticalAlignment="Bottom" Width="18" Background="#00FFFFFF" MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" MouseLeftButtonDown="Grid_MouseLeftButtonDown" />
+        <Grid HorizontalAlignment="Left" Height="18" Margin="288,0,0,95" VerticalAlignment="Bottom" Width="18" Background="#00FFFFFF" MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" MouseLeftButtonDown="Grid_MouseLeftButtonDown_1"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Image Source="Images/0.jpg" Stretch="Fill" Width="320" Height="43" Name="TT"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Grid  Name="T0" Tag="0" Width="102" Height="32" Margin="7,0,0,0" Cursor="Hand" MouseLeftButtonDown="T0_MouseLeftButtonDown" Background="#00000000" ></Grid>
+            <Grid  Name="T1" Tag="1" Width="102" Height="32" Margin="0,0,0,0" Cursor="Hand" MouseLeftButtonDown="T0_MouseLeftButtonDown" Background="#00000000" ></Grid>
+            <Grid  Name="T2" Tag="2" Width="102" Height="32" Margin="0,0,0,0" Cursor="Hand" MouseLeftButtonDown="T0_MouseLeftButtonDown" Background="#00000000" ></Grid>
+        </StackPanel>
+
+
+        <base:NotificationAreaIcon                      
+                      Text="小精灵网络电话"
+                     IconPath="images/icon.ico"
+                      MouseDoubleClick="OnNotificationAreaIconDoubleClick" x:Name="nico">
+            <base:NotificationAreaIcon.MenuItems>
+
+                <forms:MenuItem Text="注销登陆" Click="OnMenuItemAboutClick"/>
+                <forms:MenuItem Text="-" />
+                <forms:MenuItem Text="显示界面" Click="OnMenuItemOpenClick" DefaultItem="True" />
+                <forms:MenuItem Text="-" />
+                <forms:MenuItem Text="退出系统" Click="OnMenuItemExitClick" />
+            </base:NotificationAreaIcon.MenuItems>
+        </base:NotificationAreaIcon>
+
+    </Grid>
+
+
+
+
+</Window>

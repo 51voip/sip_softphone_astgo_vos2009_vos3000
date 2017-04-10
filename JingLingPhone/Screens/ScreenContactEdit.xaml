@@ -1,0 +1,25 @@
+﻿<ctrl:BaseScreen x:Class="BogheApp.Screens.ScreenContactEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:res="clr-namespace:BogheApp.embedded"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls"
+    Height="379" Width="300">
+    <Grid>
+        <Label Background="SkyBlue" FontSize="16" FontWeight="Bold" Height="33" Name="labelTitle" VerticalAlignment="Top" Content="创建联系人"></Label>
+        <Label Height="28" HorizontalAlignment="Left" Margin="0,39,0,0" Name="labelSipURI" VerticalAlignment="Top" Width="93" Content="电话号码(*)" />
+        <TextBox Height="23" Margin="99,42,12,0" Name="textBoxSipUri" VerticalAlignment="Top" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="0,71,0,0" Name="labelDisplayName" VerticalAlignment="Top" Width="93" Content="联系人名称(*)" />
+        <TextBox Height="23" Margin="98,74,12,0" Name="textBoxDisplayName" VerticalAlignment="Top" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="2,102,0,0" Name="labelGroup" VerticalAlignment="Top" Width="91" Content="隶属分组(*)" />
+        <ComboBox Height="23" Margin="98,105,12,0" Name="comboBoxGroup" VerticalAlignment="Top" >
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                    <GradientStop Color="SkyBlue" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.567"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <Button Content="{x:Static res:Strings.Button_Save}" Height="23" Margin="0,0,92,7" Name="buttonSave" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" Click="buttonSave_Click" Background="Transparent" BorderBrush="SkyBlue" />
+        <Button Content="{x:Static res:Strings.Button_Cancel}" Height="23" HorizontalAlignment="Right" Margin="0,0,9,7" Name="buttonCancel" VerticalAlignment="Bottom" Width="75" Click="buttonCancel_Click" Background="Transparent" BorderBrush="SkyBlue" />
+    </Grid>
+</ctrl:BaseScreen>

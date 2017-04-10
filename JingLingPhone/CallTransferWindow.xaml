@@ -1,0 +1,21 @@
+﻿<Window x:Class="BogheApp.CallTransferWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:res="clr-namespace:BogheApp.embedded"
+    Title="Choose number" Height="127" Width="300" WindowStyle="ToolWindow" ResizeMode="NoResize" Icon="/BogheApp;component/embedded/16/call_transfer_16.png">
+    <Grid>
+        <Button Height="36" Margin="43,0,0,7" Name="buttonTransfer" VerticalAlignment="Bottom" Click="buttonTransfer_Click" HorizontalAlignment="Left" Width="91" Background="Transparent" BorderBrush="SkyBlue">
+            <DockPanel>
+                <Image Source="/BogheApp;component/embedded/16/call_transfer_16.png" DockPanel.Dock="Left" Stretch="None"></Image>
+                <Label Content="{x:Static res:Strings.Text_Transfer}" DockPanel.Dock="Right" HorizontalContentAlignment="Left" Width="83" FontSize="12" FontWeight="Bold" />
+            </DockPanel>
+        </Button>
+        <TextBox Height="23" Margin="12,12,12,0" Name="textBoxNumber" VerticalAlignment="Top" />
+        <Button HorizontalAlignment="Right" Margin="0,0,32,8" Name="buttonCancel" Click="buttonCancel_Click" Width="91" Background="Transparent" BorderBrush="SkyBlue" Height="36" VerticalAlignment="Bottom">
+            <DockPanel>
+                <Image Source="/BogheApp;component/embedded/16/exit_16.png" DockPanel.Dock="Left" Stretch="None"></Image>
+                <Label Content="{x:Static res:Strings.Text_Cancel}" DockPanel.Dock="Right" HorizontalContentAlignment="Left" Width="83" FontSize="12" FontWeight="Bold" />
+            </DockPanel>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="BogheApp.Pay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pay" Height="640" Width="1010"  AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen"  Topmost="True">
+    <Grid Height="640" Width="1010">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/pay.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="56" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Name="Ti">
+            <TextBlock Foreground="White" FontSize="20" Text="充值支付" Margin="10,10,50,10" />
+        </Grid>
+        <Grid Grid.Row="1" Margin="9,0,7,6">
+            <WebBrowser  Name="Web1" >
+                
+            </WebBrowser>
+        </Grid>
+
+    </Grid>
+</Window>

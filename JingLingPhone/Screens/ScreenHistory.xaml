@@ -1,0 +1,49 @@
+﻿<ctrl:BaseScreen x:Class="BogheApp.Screens.ScreenHistory"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls"
+    xmlns:items="clr-namespace:BogheApp.Items"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="464" Width="308" Loaded="BaseScreen_Loaded">
+    
+    <ctrl:BaseScreen.Resources>
+        <DataTemplate x:Key="DataTemplateHistoryAVCallEvent">
+            <items:ItemHistoryAVCallEvent Value="{Binding Path=.}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </DataTemplate>
+        <DataTemplate x:Key="DataTemplateHistoryChatEvent">
+            <items:ItemHistoryChatEvent Value="{Binding Path=.}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </DataTemplate>
+        <DataTemplate x:Key="DataTemplateHistoryShortMessageEvent">
+            <items:ItemHistoryShortMessageEvent Value="{Binding Path=.}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </DataTemplate>
+        <DataTemplate x:Key="DataTemplateHistoryFileTransferEvent">
+            <items:ItemHistoryFileTransferEvent Value="{Binding Path=.}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </DataTemplate>
+    </ctrl:BaseScreen.Resources>
+    
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.Background>
+            <ImageBrush ImageSource="/BogheApp;component/Images/通话记录.png" Stretch="Fill" TileMode="None" />
+        </Grid.Background>
+        <ListBox Margin="0,54,0,0" Name="listBox" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Top" IsSynchronizedWithCurrentItem="True" SelectionMode="Single" BorderBrush="SkyBlue" />
+      
+        
+        
+        <ComboBox ItemsSource="{Binding}" Height="23" Margin="0,33,0,0" Name="comboBoxFilterCriteria" VerticalAlignment="Top" HorizontalAlignment="Left" Width="34" SelectedIndex="0" SelectionChanged="comboBoxFilterCriteria_SelectionChanged" Visibility="Hidden">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                    <GradientStop Color="SkyBlue" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.567"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding Path=ImageSource}" Margin="0,0,3,0" Width="16" Height="16" />
+                        <TextBlock Text = "{Binding Path=Text}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBox  Height="23" BorderThickness="0" HorizontalAlignment="Left" Name="textBoxSearchCriteria" TextChanged="textBoxSearchCriteria_TextChanged" Margin="61,10,0,0"  VerticalAlignment="Top" Width="174" FontSize="20"/>
+    </Grid>
+</ctrl:BaseScreen>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "非凡电商小精灵网络电话", "小精灵网络电话打包.vdproj", "{F98BBE5B-C968-42F2-84CE-CFD3B92A50EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F98BBE5B-C968-42F2-84CE-CFD3B92A50EA}.Debug|Default.ActiveCfg = Debug
+		{F98BBE5B-C968-42F2-84CE-CFD3B92A50EA}.Debug|Default.Build.0 = Debug
+		{F98BBE5B-C968-42F2-84CE-CFD3B92A50EA}.Release|Default.ActiveCfg = Release
+		{F98BBE5B-C968-42F2-84CE-CFD3B92A50EA}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

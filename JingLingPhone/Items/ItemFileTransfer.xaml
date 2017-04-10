@@ -1,0 +1,35 @@
+﻿<ctrl:BaseItem x:TypeArguments="corem:HistoryFileTransferEvent" x:Class="BogheApp.Items.ItemFileTransfer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:corem="clr-namespace:BogheCore.Model;assembly=BogheCore"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls"
+    HorizontalAlignment="Stretch"
+    >
+    <Grid>        
+        <Border Margin="2,2,2,2" Name="borderHdr"  VerticalAlignment="Top" CornerRadius="3,3,3,3" BorderBrush="SkyBlue" Padding="2" BorderThickness="1" Height="27">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                    <GradientStop x:Name="gradientStop" Color="Bisque" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.567"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <DockPanel>
+                <Label DockPanel.Dock="Left" Height="22" Name="labelDescription" Width="183" FontSize="10" VerticalAlignment="Center">I sent</Label>
+                <Image DockPanel.Dock="Right" HorizontalAlignment="Right" Name="imageStatus" Stretch="None" VerticalAlignment="Center" Source="/BogheApp;component/embedded/16/bullet_ball_glass_yellow_16.png" />
+                <Label DockPanel.Dock="Right" Name="labelDate" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Right">Today 20:29:11</Label>
+            </DockPanel>
+        </Border>
+        <DockPanel Margin="5,32,2,0" Height="70" VerticalAlignment="Top">
+            <Image DockPanel.Dock="Left" Height="32" Name="imageIcon" Stretch="Fill" Width="32" VerticalAlignment="Top" ToolTip="Open File" MouseUp="imageIcon_MouseUp" />
+            <DockPanel Margin="3,0,0,0">
+                <TextBlock DockPanel.Dock="Top" Name="textBlockName" Text="My Best Picture.PNG (6,78 Ko)" FontWeight="Bold" HorizontalAlignment="Stretch"></TextBlock>
+                <ProgressBar DockPanel.Dock="Top" Height="16" Background="Transparent" Name="progressBar" BorderBrush="SkyBlue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></ProgressBar>
+                <DockPanel Margin="0,3,0,0">
+                    <TextBlock DockPanel.Dock="Left" Name="textBlockTransfered" VerticalAlignment="Top" Width="143">Transfered: 5,2 Ko</TextBlock>
+                    <Button DockPanel.Dock="Right" Name="buttonAccept" Width="46" Margin="3,0,0,0" Height="29" HorizontalAlignment="Right" Background="Transparent" BorderBrush="SkyBlue" Click="buttonAccept_Click">accept</Button>
+                    <Button DockPanel.Dock="Right" Name="buttonDecline" Width="46" Margin="3,0,0,0" Height="29" HorizontalAlignment="Right" Background="Transparent" BorderBrush="SkyBlue" Click="buttonDecline_Click">decline</Button>
+                </DockPanel>
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</ctrl:BaseItem>

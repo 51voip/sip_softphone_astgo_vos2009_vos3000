@@ -1,0 +1,89 @@
+﻿<Window x:Class="BogheApp.MessagingWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:items="clr-namespace:BogheApp.Items"
+    xmlns:res="clr-namespace:BogheApp.embedded"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls"
+    Title="Talking with me" Height="570" Width="400" Icon="/BogheApp;component/embedded/icon.ico" Closing="Window_Closing" Closed="Window_Closed" Loaded="Window_Loaded">
+    
+    <Window.Resources>
+        <DataTemplate x:Key="DataTemplateItemShortMessage">
+            <items:ItemShortMessage Value="{Binding Path=.}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </DataTemplate>
+        <DataTemplate x:Key="DataTemplateItemFileTransfer">
+            <items:ItemFileTransfer Value="{Binding Path=.}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        </DataTemplate>
+    </Window.Resources>
+    
+    <Grid>
+        <Menu  Name="menu" VerticalAlignment="Top" Background="White" FontWeight="Normal" FontSize="14" BorderBrush="SkyBlue" BorderThickness="1">
+            <MenuItem Name="MenuItemCall" Background="White">
+                <MenuItem.Header>
+                    <DockPanel>
+                        <Image Source="/BogheApp;component/embedded/24/magic_wand_24.png" Stretch="None" />
+                        <TextBlock Text="{x:Static res:Strings.IM_MenuOptions}"/>
+                    </DockPanel>
+                </MenuItem.Header>
+                <MenuItem Header="{x:Static res:Strings.IM_MakeAudioCall}" Name="MenuItemCall_MakeAudioCall" Click="MenuItemCall_MakeAudioCall_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/voice_call_16.png" Stretch="None" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="{x:Static res:Strings.IM_MakeVideoCall}" Name="MenuItemCall_MakeVideoCall" Click="MenuItemCall_MakeVideoCall_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/visio_call_16.png" Stretch="None" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="{x:Static res:Strings.IM_ShareImage}" Name="MenuItemCall_ShareImage" Click="MenuItemCall_ShareImage_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/image_gallery_16.png" Stretch="None" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="{x:Static res:Strings.IM_ShareVideo}" Name="MenuItemCall_ShareVideo" Click="MenuItemCall_ShareVideo_Click" IsEnabled="False">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/image_gallery_16.png" Stretch="None" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+
+        <Border BorderThickness="1" BorderBrush="SkyBlue" Margin="2,107,4,59" CornerRadius="5,5,5,5">
+            <ScrollViewer Name="historyCtrlScrollViewer" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <ItemsControl Name="historyCtrl" HorizontalContentAlignment="Stretch" />
+            </ScrollViewer>
+        </Border>
+        <TextBox AcceptsReturn="True" BorderBrush="SkyBlue" Margin="4,0,78,3" Name="textBoxInput" Height="53" VerticalAlignment="Bottom" TextChanged="textBoxInput_TextChanged" />
+        <Button Height="54" HorizontalAlignment="Right" Margin="0,0,3,2" Name="buttonSendText" VerticalAlignment="Bottom" Width="73" Padding="0" BorderBrush="SkyBlue" Background="Transparent" Click="buttonSendText_Click">
+            <DockPanel Width="69">
+                <Image Name="buttonSendTextImage" Source="/BogheApp;component/embedded/24/message_24.png" DockPanel.Dock="Top" Stretch="None"></Image>
+                <Label Content="{x:Static res:Strings.IM_SendText}" Name="buttonSendTextLabel"  DockPanel.Dock="Bottom" HorizontalContentAlignment="Center" FontSize="12" />
+            </DockPanel>
+        </Button>
+        <ListBox Height="70" Margin="4,35,103,0" Name="listBoxParticipants" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" BorderBrush="SkyBlue">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel>
+                        <Image Source="{Binding Path=PresStatusImageSource}" Stretch="None" Margin="2,0,2,0" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                        <TextBlock Text = "{Binding Path=DisplayName}" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                        <Image Source="{Binding Path=ConfStatusImageSource}" Stretch="None" Margin="2,0,2,0" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                        <Image Source="/BogheApp;component/embedded/16/pen_16.png" Stretch="None" Margin="2,0,2,0" HorizontalAlignment="Right" VerticalAlignment="Center" Visibility="{Binding Path=IsComposingVisibility}" />
+                    </DockPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Height="34" HorizontalAlignment="Right" Margin="0,35,5,0" Name="buttonAddParticipant" VerticalAlignment="Top" Width="92" IsEnabled="False" Background="Transparent" BorderBrush="SkyBlue">
+            <DockPanel HorizontalAlignment="Left">
+                <Image Source="/BogheApp;component/embedded/16/user_add_16.png" HorizontalAlignment="Left" Stretch="None" Margin="2,0,2,0" VerticalAlignment="Center" />
+                <TextBlock Text="{x:Static res:Strings.IM_Invite}" Width="61" VerticalAlignment="Center" />
+            </DockPanel>
+        </Button>
+        <Button Height="30" HorizontalAlignment="Right" Margin="0,74,5,0" Name="buttonSendFile" VerticalAlignment="Top" Width="92" Click="buttonSendFile_Click" Background="Transparent" BorderBrush="SkyBlue" Padding="0">
+            <DockPanel HorizontalAlignment="Left">
+                <Image Source="/BogheApp;component/embedded/16/document_up_16.png" HorizontalAlignment="Left" Stretch="None" Margin="2,0,2,0" VerticalAlignment="Center" />
+                <TextBlock Text="{x:Static res:Strings.IM_SendFile}" Width="61" VerticalAlignment="Center" />
+            </DockPanel>
+        </Button>
+    </Grid>
+</Window>

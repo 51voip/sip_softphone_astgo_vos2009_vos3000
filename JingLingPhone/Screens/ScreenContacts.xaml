@@ -1,0 +1,51 @@
+﻿<ctrl:BaseScreen x:Class="BogheApp.Screens.ScreenContacts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls"
+    xmlns:local="clr-namespace:BogheApp.Screens"
+    xmlns:items="clr-namespace:BogheApp.Items"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:res="clr-namespace:BogheApp.embedded"
+    HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="510" Width="367">
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.Background>
+            <ImageBrush   Stretch="Fill" TileMode="None" />
+        </Grid.Background>
+        <ListBox Name="listBox" ItemsSource="{Binding}" Margin="55,52,0,-1" HorizontalContentAlignment="Stretch" BorderBrush="SkyBlue">
+            <ListBox.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <items:ItemGroup Value="{Binding Path=Name}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </ListBox.GroupStyle>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <items:ItemContact Value="{Binding Path=.}" HorizontalAlignment="Left" VerticalAlignment="Top"></items:ItemContact>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ComboBox ItemsSource="{Binding}" Margin="1,136,258,0" Name="comboBoxGroups" Height="23" VerticalAlignment="Top" SelectionChanged="comboBoxGroups_SelectionChanged" Visibility="Hidden">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                    <GradientStop Color="SkyBlue" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.567"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="0,0,2,0" Source="{Binding Path=ImageSource}" Width="16" Height="16" />
+                        <TextBlock Text = "{Binding Path=DisplayName}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBox Height="25" HorizontalAlignment="Left" Margin="97,14,0,0" Name="textBoxSearchCriteria" VerticalAlignment="Top" Width="140" FontSize="20" BorderThickness="0" TextChanged="textBoxSearchCriteria_TextChanged" />
+
+        <TextBlock Height="35" HorizontalAlignment="Left" Margin="254,9,0,0" Name="textBlock4" Text="" VerticalAlignment="Top" Width="35"  MouseLeftButtonDown="buttonAdd_MouseLeftButtonDown"/>
+    </Grid>
+</ctrl:BaseScreen>

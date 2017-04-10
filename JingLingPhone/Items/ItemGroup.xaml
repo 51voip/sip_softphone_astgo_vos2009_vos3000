@@ -1,0 +1,42 @@
+﻿<ctrl:BaseItem x:TypeArguments="system:String" x:Class="BogheApp.Items.ItemGroup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls" 
+     BorderThickness="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="SkyBlue" Height="41" Padding="0,0,0,4">
+    
+    <Grid x:Name="Grid">
+
+        <Grid.ContextMenu>
+            <ContextMenu Name="ctxMenu" Background="White" BorderBrush="SkyBlue">
+                <MenuItem Name="ctxMenu_AddContact" Header="Add Contact" Click="ctxMenu_AddContact_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/user_add_16.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Name="ctxMenu_EditGroup" Header="Edit Group" Click="ctxMenu_EditGroup_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/users4_edit_16.png" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="ctxMenu_DeleteGroup" Header="Delete Group" Click="ctxMenu_DeleteGroup_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/users4_delete_16.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                
+            </ContextMenu>
+        </Grid.ContextMenu>
+        
+        
+        
+        <Grid.Background>
+            <LinearGradientBrush x:Name="GridGradien">
+                <GradientStop x:Name="GridGradienStop" Color="Green" Offset="1.5"/>
+                <GradientStop Color="White" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Margin="0,0,0,0" Name="labelDisplayName" FontSize="14" FontWeight="Bold" FontFamily="Comic Sans M">RCS Contacts</Label>
+    </Grid>
+</ctrl:BaseItem>

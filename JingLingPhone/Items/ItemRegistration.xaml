@@ -1,0 +1,14 @@
+﻿<ctrl:BaseItem x:TypeArguments="corem:RegistrationInfo" x:Class="BogheApp.Items.ItemRegistration"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:corem="clr-namespace:BogheCore.Model;assembly=BogheCore"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls"
+    Height="69" BorderThickness="1" BorderBrush="AliceBlue">
+    <Grid>
+        <Label Name="labelAoR" Height="24" VerticalAlignment="Top" FontWeight="Bold" Margin="22,0,23,0">sip:test@doubango.org</Label>
+        <Image Height="16" Name="imageStatus" Stretch="None" VerticalAlignment="Top" HorizontalAlignment="Right" Width="16" Margin="0,2,2,0" Source="/BogheApp;component/embedded/16/bullet_ball_glass_green_16.png" />
+        <Label  DockPanel.Dock="Top" Margin="26,23,2,0" Name="labelContactUri" Height="24" VerticalAlignment="Top">sip:test@192.168.0.19:52647;transport=udp</Label>
+        <Label Name="labelContactState" Margin="26,0,2,0" Height="25" VerticalAlignment="Bottom">Active (registered)</Label>
+        <RadioButton Height="16" HorizontalAlignment="Left" Margin="5,5,0,0" Name="radioButtonDefault" VerticalAlignment="Top" Width="15">RadioButton</RadioButton>
+    </Grid>
+</ctrl:BaseItem>

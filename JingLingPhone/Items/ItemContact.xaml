@@ -1,0 +1,38 @@
+﻿<ctrl:BaseItem x:TypeArguments="corem:Contact" x:Class="BogheApp.Items.ItemContact"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:corem="clr-namespace:BogheCore.Model;assembly=BogheCore"
+    xmlns:ctrl="clr-namespace:BogheControls;assembly=BogheControls" Padding="15,0,0,0">
+    
+    <Grid Background="Transparent">  
+        <Image Name="imageAvatar" Stretch="None" Width="48" Height="48" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/BogheApp;component/embedded/48/avatar_48.png" />
+        <Image Margin="50,3,0,0" Name="imageStatus" Stretch="None" Height="16" VerticalAlignment="Top" Width="16" HorizontalAlignment="Left" Source="/BogheApp;component/embedded/16/user_offline_16.png" />
+        <Label Margin="72,0,0,0" Name="labelDisplayName" FontWeight="Bold" FontSize="14" Height="28.62" VerticalAlignment="Top">用户名</Label>
+        <Label Margin="52,0,0,0" Name="labelFreeText" Height="25.96" VerticalAlignment="Bottom">Hello from Paris!</Label>
+    
+    
+        <Grid.ContextMenu>
+            <ContextMenu Name="ctxMenu" Background="White" BorderBrush="SkyBlue">                
+                <MenuItem Name="ctxMenu_Edit" Click="ctxMenu_Edit_Click" Header="编辑联系人">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/user_edit_16.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="删除联系人" Name="ctxMenu_Delete" Click="ctxMenu_Delete_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/user_delete_16.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="呼叫" Name="ctxMenu_Voice" Click="ctxMenu_Voice_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/BogheApp;component/embedded/16/voice_call_16.png" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </ContextMenu>
+        </Grid.ContextMenu>
+    </Grid>
+    
+    
+    
+</ctrl:BaseItem>
